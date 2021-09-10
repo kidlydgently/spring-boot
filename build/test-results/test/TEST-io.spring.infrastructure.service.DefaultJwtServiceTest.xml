@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.spring.infrastructure.service.DefaultJwtServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-18T14:17:43" hostname="nixskillup" time="0.321">
+  <properties/>
+  <testcase name="should_generate_and_parse_token" classname="io.spring.infrastructure.service.DefaultJwtServiceTest" time="0.315"/>
+  <testcase name="should_get_null_with_wrong_jwt" classname="io.spring.infrastructure.service.DefaultJwtServiceTest" time="0.001"/>
+  <testcase name="should_get_null_with_expired_jwt" classname="io.spring.infrastructure.service.DefaultJwtServiceTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

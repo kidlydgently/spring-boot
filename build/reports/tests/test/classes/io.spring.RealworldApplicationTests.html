@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - RealworldApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>RealworldApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/io.spring.html">io.spring</a> &gt; RealworldApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.676s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads</td>
+<td class="success">0.676s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:16:55.951 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.spring.RealworldApplicationTests]
+14:16:55.955 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.spring.RealworldApplicationTests]
+14:16:55.956 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.spring.RealworldApplicationTests]
+14:16:55.956 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.spring.RealworldApplicationTests]
+14:16:55.969 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@38071a7e testClass = RealworldApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@16466c95 testClass = RealworldApplicationTests, locations = '{}', classes = '{class io.spring.RealworldApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@6d6d6a43, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@36698e22, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5f9e60cd, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4a39fd90, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@6fe9d09a, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@4308d797], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+14:16:55.971 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.spring.RealworldApplicationTests]
+14:16:55.972 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.spring.RealworldApplicationTests]
+14:16:56.016 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-08-18 14:16:56.729  INFO 12351 --- [    Test worker] io.spring.RealworldApplicationTests      : Starting RealworldApplicationTests using Java 11.0.11 on nixskillup with PID 12351 (started by root in /repo/test/spring-boot-realworld-example-app)
+2021-08-18 14:16:56.736  INFO 12351 --- [    Test worker] io.spring.RealworldApplicationTests      : No active profile set, falling back to default profiles: default
+2021-08-18 14:17:00.823  INFO 12351 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-18 14:17:00.896  INFO 12351 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 0 JPA repository interfaces.
+2021-08-18 14:17:05.888  INFO 12351 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5c0fa178-69f6-45b7-ab83-c5e86a3dc241
+
+2021-08-18 14:17:06.307  INFO 12351 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b81aef2, org.springframework.security.web.context.SecurityContextPersistenceFilter@19970fda, org.springframework.security.web.header.HeaderWriterFilter@6e83eb4a, org.springframework.web.filter.CorsFilter@49cff9dc, org.springframework.security.web.authentication.logout.LogoutFilter@4d254719, io.spring.api.security.JwtTokenFilter@2a35b498, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ba0ed99, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@535a8b96, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ced450f, org.springframework.security.web.session.SessionManagementFilter@791523c0, org.springframework.security.web.access.ExceptionTranslationFilter@2bafed4d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@708f0d27]
+2021-08-18 14:17:07.657  INFO 12351 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-18 14:17:08.092  INFO 12351 --- [    Test worker] c.n.g.d.w.a.GraphiQLConfigurer           : Configuring GraphiQL to use GraphQL endpoint at '/graphql'
+2021-08-18 14:17:08.333  WARN 12351 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-18 14:17:10.836  INFO 12351 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 7.1.1 by Redgate
+2021-08-18 14:17:10.856  INFO 12351 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-18 14:17:11.109  INFO 12351 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-18 14:17:11.187  INFO 12351 --- [    Test worker] o.f.c.i.database.base.DatabaseType       : Database: jdbc:sqlite:dev.db (SQLite 3.34)
+2021-08-18 14:17:11.284  INFO 12351 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.036s)
+2021-08-18 14:17:11.302  INFO 12351 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;main&quot;: 1
+2021-08-18 14:17:11.303  INFO 12351 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema &quot;main&quot; is up to date. No migration necessary.
+2021-08-18 14:17:11.698  INFO 12351 --- [    Test worker] io.spring.RealworldApplicationTests      : Started RealworldApplicationTests in 15.655 seconds (JVM running for 20.471)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.5.1</a> at Aug 18, 2021, 2:17:44 PM</p>
+</div>
+</div>
+</body>
+</html>

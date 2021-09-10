@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.spring.api.CommentsApiTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-08-18T14:17:22" hostname="nixskillup" time="0.397">
+  <properties/>
+  <testcase name="should_create_comment_success" classname="io.spring.api.CommentsApiTest" time="0.116"/>
+  <testcase name="should_get_403_if_not_author_of_article_or_author_of_comment_when_delete_comment" classname="io.spring.api.CommentsApiTest" time="0.041"/>
+  <testcase name="should_get_comments_of_article_success" classname="io.spring.api.CommentsApiTest" time="0.09"/>
+  <testcase name="should_delete_comment_success" classname="io.spring.api.CommentsApiTest" time="0.034"/>
+  <testcase name="should_get_422_with_empty_body" classname="io.spring.api.CommentsApiTest" time="0.092"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-08-18 14:17:21.127  INFO 12351 --- [    Test worker] io.spring.api.CommentsApiTest            : Starting CommentsApiTest using Java 11.0.11 on nixskillup with PID 12351 (started by root in /repo/test/spring-boot-realworld-example-app)
+2021-08-18 14:17:21.129  INFO 12351 --- [    Test worker] io.spring.api.CommentsApiTest            : No active profile set, falling back to default profiles: default
+2021-08-18 14:17:21.985  INFO 12351 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1195603f-d873-4395-a084-38d8fd89f458
+
+2021-08-18 14:17:22.154  INFO 12351 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33cbda2a, org.springframework.security.web.context.SecurityContextPersistenceFilter@322e9ff5, org.springframework.security.web.header.HeaderWriterFilter@e3ea5aa, org.springframework.web.filter.CorsFilter@a3ab4f4, org.springframework.security.web.authentication.logout.LogoutFilter@373ce4d3, io.spring.api.security.JwtTokenFilter@50d2594d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39afcbec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42c72a86, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2eaf8011, org.springframework.security.web.session.SessionManagementFilter@2a13298b, org.springframework.security.web.access.ExceptionTranslationFilter@7c4ef884, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@520a8234]
+2021-08-18 14:17:22.343  INFO 12351 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-18 14:17:22.567  WARN 12351 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-18 14:17:22.767  INFO 12351 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-18 14:17:22.767  INFO 12351 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-18 14:17:22.768  INFO 12351 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-08-18 14:17:22.797  INFO 12351 --- [    Test worker] io.spring.api.CommentsApiTest            : Started CommentsApiTest in 1.717 seconds (JVM running for 31.57)
+200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    "comments": [
+        {
+            "id": "23ef649c-4c47-40b7-a702-ca8c241f7da9",
+            "body": "comment",
+            "createdAt": "2021-08-18T14:17:22.983Z",
+            "updatedAt": "2021-08-18T14:17:22.983Z",
+            "cursor": {
+                "data": "2021-08-18T14:17:22.983Z"
+            },
+            "author": {
+                "username": "johnjacob",
+                "bio": "",
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            }
+        }
+    ]
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

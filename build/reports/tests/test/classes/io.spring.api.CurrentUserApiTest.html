@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CurrentUserApiTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CurrentUserApiTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/io.spring.api.html">io.spring.api</a> &gt; CurrentUserApiTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.434s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">should_get_401_if_not_login</td>
+<td class="success">0.032s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should_get_401_with_invalid_token</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should_get_401_without_token</td>
+<td class="success">0.022s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should_get_current_user_with_token</td>
+<td class="success">0.155s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should_get_error_if_email_exists_when_update_user_profile</td>
+<td class="success">0.154s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should_update_current_user_profile</td>
+<td class="success">0.057s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-08-18 14:17:25.196  INFO 12351 --- [    Test worker] io.spring.api.CurrentUserApiTest         : Starting CurrentUserApiTest using Java 11.0.11 on nixskillup with PID 12351 (started by root in /repo/test/spring-boot-realworld-example-app)
+2021-08-18 14:17:25.202  INFO 12351 --- [    Test worker] io.spring.api.CurrentUserApiTest         : No active profile set, falling back to default profiles: default
+2021-08-18 14:17:25.924  INFO 12351 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c694d21f-dc75-40da-949c-a662a1ddaa31
+
+2021-08-18 14:17:26.052  INFO 12351 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59438c5a, org.springframework.security.web.context.SecurityContextPersistenceFilter@10b8709f, org.springframework.security.web.header.HeaderWriterFilter@70b007ae, org.springframework.web.filter.CorsFilter@3e8ce52f, org.springframework.security.web.authentication.logout.LogoutFilter@76c1da96, io.spring.api.security.JwtTokenFilter@68466e6e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@384072cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@483d8f1c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fb50463, org.springframework.security.web.session.SessionManagementFilter@122ffa3d, org.springframework.security.web.access.ExceptionTranslationFilter@2b106805, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@656011a7]
+2021-08-18 14:17:26.262  INFO 12351 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-18 14:17:26.479  WARN 12351 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-18 14:17:26.662  INFO 12351 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-18 14:17:26.663  INFO 12351 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-18 14:17:26.663  INFO 12351 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2021-08-18 14:17:26.700  INFO 12351 --- [    Test worker] io.spring.api.CurrentUserApiTest         : Started CurrentUserApiTest in 1.541 seconds (JVM running for 35.474)
+422 updateUser.command.email: email already exist
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    &quot;errors&quot;: {
+        &quot;email&quot;: [
+            &quot;email already exist&quot;
+        ]
+    }
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.5.1</a> at Aug 18, 2021, 2:17:44 PM</p>
+</div>
+</div>
+</body>
+</html>

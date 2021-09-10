@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.spring.api.ListArticleApiTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-18T14:17:30" hostname="nixskillup" time="0.12">
+  <properties/>
+  <testcase name="should_get_default_article_list" classname="io.spring.api.ListArticleApiTest" time="0.066"/>
+  <testcase name="should_get_feeds_success" classname="io.spring.api.ListArticleApiTest" time="0.041"/>
+  <testcase name="should_get_feeds_401_without_login" classname="io.spring.api.ListArticleApiTest" time="0.008"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-08-18 14:17:28.975  INFO 12351 --- [    Test worker] io.spring.api.ListArticleApiTest         : Starting ListArticleApiTest using Java 11.0.11 on nixskillup with PID 12351 (started by root in /repo/test/spring-boot-realworld-example-app)
+2021-08-18 14:17:28.976  INFO 12351 --- [    Test worker] io.spring.api.ListArticleApiTest         : No active profile set, falling back to default profiles: default
+2021-08-18 14:17:29.603  INFO 12351 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7f294341-7f0a-4e5a-904e-5c54ad001989
+
+2021-08-18 14:17:29.754  INFO 12351 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7166f653, org.springframework.security.web.context.SecurityContextPersistenceFilter@776f3720, org.springframework.security.web.header.HeaderWriterFilter@7e32bc41, org.springframework.web.filter.CorsFilter@1329c401, org.springframework.security.web.authentication.logout.LogoutFilter@21066839, io.spring.api.security.JwtTokenFilter@5e87739d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4587b9cb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ebcd58e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f195994, org.springframework.security.web.session.SessionManagementFilter@54daa723, org.springframework.security.web.access.ExceptionTranslationFilter@570caacc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@165e87f5]
+2021-08-18 14:17:29.948  INFO 12351 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-18 14:17:30.156  WARN 12351 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-18 14:17:30.332  INFO 12351 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-18 14:17:30.338  INFO 12351 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-18 14:17:30.340  INFO 12351 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2021-08-18 14:17:30.362  INFO 12351 --- [    Test worker] io.spring.api.ListArticleApiTest         : Started ListArticleApiTest in 1.419 seconds (JVM running for 39.135)
+200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    "articles": [
+        {
+            "id": "1id",
+            "slug": "title-1",
+            "title": "title 1",
+            "description": "desc 1",
+            "body": "body 1",
+            "favorited": false,
+            "favoritesCount": 0,
+            "createdAt": "2021-08-18T14:17:30.386Z",
+            "updatedAt": "2021-08-18T14:17:30.386Z",
+            "tagList": [
+                
+            ],
+            "cursor": {
+                "data": "2021-08-18T14:17:30.386Z"
+            },
+            "author": {
+                "username": "johnjacob",
+                "bio": "",
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            }
+        },
+        {
+            "id": "2id",
+            "slug": "title-2",
+            "title": "title 2",
+            "description": "desc 2",
+            "body": "body 2",
+            "favorited": false,
+            "favoritesCount": 0,
+            "createdAt": "2021-08-18T14:17:30.386Z",
+            "updatedAt": "2021-08-18T14:17:30.386Z",
+            "tagList": [
+                
+            ],
+            "cursor": {
+                "data": "2021-08-18T14:17:30.386Z"
+            },
+            "author": {
+                "username": "johnjacob",
+                "bio": "",
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            }
+        }
+    ],
+    "articlesCount": 2
+}
+200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    "articles": [
+        {
+            "id": "1id",
+            "slug": "title-1",
+            "title": "title 1",
+            "description": "desc 1",
+            "body": "body 1",
+            "favorited": false,
+            "favoritesCount": 0,
+            "createdAt": "2021-08-18T14:17:30.445Z",
+            "updatedAt": "2021-08-18T14:17:30.445Z",
+            "tagList": [
+                
+            ],
+            "cursor": {
+                "data": "2021-08-18T14:17:30.445Z"
+            },
+            "author": {
+                "username": "johnjacob",
+                "bio": "",
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            }
+        },
+        {
+            "id": "2id",
+            "slug": "title-2",
+            "title": "title 2",
+            "description": "desc 2",
+            "body": "body 2",
+            "favorited": false,
+            "favoritesCount": 0,
+            "createdAt": "2021-08-18T14:17:30.445Z",
+            "updatedAt": "2021-08-18T14:17:30.445Z",
+            "tagList": [
+                
+            ],
+            "cursor": {
+                "data": "2021-08-18T14:17:30.445Z"
+            },
+            "author": {
+                "username": "johnjacob",
+                "bio": "",
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            }
+        }
+    ],
+    "articlesCount": 2
+}
+401
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

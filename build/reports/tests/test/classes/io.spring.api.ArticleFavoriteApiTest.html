@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ArticleFavoriteApiTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ArticleFavoriteApiTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/io.spring.api.html">io.spring.api</a> &gt; ArticleFavoriteApiTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.906s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">should_favorite_an_article_success</td>
+<td class="success">0.090s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should_unfavorite_an_article_success</td>
+<td class="success">2.816s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-08-18 14:17:12.528  INFO 12351 --- [    Test worker] io.spring.api.ArticleFavoriteApiTest     : Starting ArticleFavoriteApiTest using Java 11.0.11 on nixskillup with PID 12351 (started by root in /repo/test/spring-boot-realworld-example-app)
+2021-08-18 14:17:12.530  INFO 12351 --- [    Test worker] io.spring.api.ArticleFavoriteApiTest     : No active profile set, falling back to default profiles: default
+2021-08-18 14:17:14.001  INFO 12351 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4ec64f67-3f20-45d3-a92c-b8731f3cd955
+
+2021-08-18 14:17:14.156  INFO 12351 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b49ebd3, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ccb272c, org.springframework.security.web.header.HeaderWriterFilter@1b61179d, org.springframework.web.filter.CorsFilter@7820ca4f, org.springframework.security.web.authentication.logout.LogoutFilter@662cd0b0, io.spring.api.security.JwtTokenFilter@6b24ae56, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74078814, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67c9b4f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8ec913d, org.springframework.security.web.session.SessionManagementFilter@78bd9568, org.springframework.security.web.access.ExceptionTranslationFilter@22235ae3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e8c2a54]
+2021-08-18 14:17:14.369  INFO 12351 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-18 14:17:14.609  WARN 12351 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-18 14:17:14.861  INFO 12351 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-18 14:17:14.862  INFO 12351 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-18 14:17:14.863  INFO 12351 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-08-18 14:17:14.904  INFO 12351 --- [    Test worker] io.spring.api.ArticleFavoriteApiTest     : Started ArticleFavoriteApiTest in 2.444 seconds (JVM running for 23.677)
+200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    &quot;article&quot;: {
+        &quot;id&quot;: &quot;4ca0d14e-27b6-4c12-af23-568c0fdca620&quot;,
+        &quot;slug&quot;: &quot;title&quot;,
+        &quot;title&quot;: &quot;title&quot;,
+        &quot;description&quot;: &quot;desc&quot;,
+        &quot;body&quot;: &quot;body&quot;,
+        &quot;favorited&quot;: true,
+        &quot;favoritesCount&quot;: 1,
+        &quot;createdAt&quot;: &quot;2021-08-18T14:17:14.986Z&quot;,
+        &quot;updatedAt&quot;: &quot;2021-08-18T14:17:14.986Z&quot;,
+        &quot;tagList&quot;: [
+            &quot;java&quot;
+        ],
+        &quot;cursor&quot;: {
+            &quot;data&quot;: &quot;2021-08-18T14:17:14.986Z&quot;
+        },
+        &quot;author&quot;: {
+            &quot;username&quot;: &quot;other&quot;,
+            &quot;bio&quot;: &quot;&quot;,
+            &quot;image&quot;: &quot;&quot;,
+            &quot;following&quot;: false
+        }
+    }
+}
+200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    &quot;article&quot;: {
+        &quot;id&quot;: &quot;332c47c3-6f81-41a2-83f4-ec803cd4642f&quot;,
+        &quot;slug&quot;: &quot;title&quot;,
+        &quot;title&quot;: &quot;title&quot;,
+        &quot;description&quot;: &quot;desc&quot;,
+        &quot;body&quot;: &quot;body&quot;,
+        &quot;favorited&quot;: true,
+        &quot;favoritesCount&quot;: 1,
+        &quot;createdAt&quot;: &quot;2021-08-18T14:17:17.739Z&quot;,
+        &quot;updatedAt&quot;: &quot;2021-08-18T14:17:17.739Z&quot;,
+        &quot;tagList&quot;: [
+            &quot;java&quot;
+        ],
+        &quot;cursor&quot;: {
+            &quot;data&quot;: &quot;2021-08-18T14:17:17.739Z&quot;
+        },
+        &quot;author&quot;: {
+            &quot;username&quot;: &quot;other&quot;,
+            &quot;bio&quot;: &quot;&quot;,
+            &quot;image&quot;: &quot;&quot;,
+            &quot;following&quot;: false
+        }
+    }
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.5.1</a> at Aug 18, 2021, 2:17:44 PM</p>
+</div>
+</div>
+</body>
+</html>

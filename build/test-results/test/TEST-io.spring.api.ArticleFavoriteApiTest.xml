@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.spring.api.ArticleFavoriteApiTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-18T14:17:14" hostname="nixskillup" time="2.912">
+  <properties/>
+  <testcase name="should_unfavorite_an_article_success" classname="io.spring.api.ArticleFavoriteApiTest" time="2.816"/>
+  <testcase name="should_favorite_an_article_success" classname="io.spring.api.ArticleFavoriteApiTest" time="0.09"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-08-18 14:17:12.528  INFO 12351 --- [    Test worker] io.spring.api.ArticleFavoriteApiTest     : Starting ArticleFavoriteApiTest using Java 11.0.11 on nixskillup with PID 12351 (started by root in /repo/test/spring-boot-realworld-example-app)
+2021-08-18 14:17:12.530  INFO 12351 --- [    Test worker] io.spring.api.ArticleFavoriteApiTest     : No active profile set, falling back to default profiles: default
+2021-08-18 14:17:14.001  INFO 12351 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4ec64f67-3f20-45d3-a92c-b8731f3cd955
+
+2021-08-18 14:17:14.156  INFO 12351 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b49ebd3, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ccb272c, org.springframework.security.web.header.HeaderWriterFilter@1b61179d, org.springframework.web.filter.CorsFilter@7820ca4f, org.springframework.security.web.authentication.logout.LogoutFilter@662cd0b0, io.spring.api.security.JwtTokenFilter@6b24ae56, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74078814, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67c9b4f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8ec913d, org.springframework.security.web.session.SessionManagementFilter@78bd9568, org.springframework.security.web.access.ExceptionTranslationFilter@22235ae3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e8c2a54]
+2021-08-18 14:17:14.369  INFO 12351 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-18 14:17:14.609  WARN 12351 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-18 14:17:14.861  INFO 12351 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-18 14:17:14.862  INFO 12351 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-18 14:17:14.863  INFO 12351 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-08-18 14:17:14.904  INFO 12351 --- [    Test worker] io.spring.api.ArticleFavoriteApiTest     : Started ArticleFavoriteApiTest in 2.444 seconds (JVM running for 23.677)
+200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    "article": {
+        "id": "4ca0d14e-27b6-4c12-af23-568c0fdca620",
+        "slug": "title",
+        "title": "title",
+        "description": "desc",
+        "body": "body",
+        "favorited": true,
+        "favoritesCount": 1,
+        "createdAt": "2021-08-18T14:17:14.986Z",
+        "updatedAt": "2021-08-18T14:17:14.986Z",
+        "tagList": [
+            "java"
+        ],
+        "cursor": {
+            "data": "2021-08-18T14:17:14.986Z"
+        },
+        "author": {
+            "username": "other",
+            "bio": "",
+            "image": "",
+            "following": false
+        }
+    }
+}
+200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    "article": {
+        "id": "332c47c3-6f81-41a2-83f4-ec803cd4642f",
+        "slug": "title",
+        "title": "title",
+        "description": "desc",
+        "body": "body",
+        "favorited": true,
+        "favoritesCount": 1,
+        "createdAt": "2021-08-18T14:17:17.739Z",
+        "updatedAt": "2021-08-18T14:17:17.739Z",
+        "tagList": [
+            "java"
+        ],
+        "cursor": {
+            "data": "2021-08-18T14:17:17.739Z"
+        },
+        "author": {
+            "username": "other",
+            "bio": "",
+            "image": "",
+            "following": false
+        }
+    }
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

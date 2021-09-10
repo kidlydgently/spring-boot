@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CommentQueryServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CommentQueryServiceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/io.spring.application.comment.html">io.spring.application.comment</a> &gt; CommentQueryServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.069s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">should_read_comment_success</td>
+<td class="success">0.024s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should_read_comments_of_article</td>
+<td class="success">0.045s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-08-18 14:17:35.579  INFO 12351 --- [    Test worker] i.s.a.comment.CommentQueryServiceTest    : Starting CommentQueryServiceTest using Java 11.0.11 on nixskillup with PID 12351 (started by root in /repo/test/spring-boot-realworld-example-app)
+2021-08-18 14:17:35.580  INFO 12351 --- [    Test worker] i.s.a.comment.CommentQueryServiceTest    : The following profiles are active: test
+2021-08-18 14:17:36.266  INFO 12351 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 7.1.1 by Redgate
+2021-08-18 14:17:36.267  INFO 12351 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2021-08-18 14:17:36.270  INFO 12351 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2021-08-18 14:17:36.270  INFO 12351 --- [    Test worker] o.f.c.i.database.base.DatabaseType       : Database: jdbc:sqlite::memory: (SQLite 3.34)
+2021-08-18 14:17:36.273  INFO 12351 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.001s)
+2021-08-18 14:17:36.274  INFO 12351 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table &quot;main&quot;.&quot;flyway_schema_history&quot; ...
+2021-08-18 14:17:36.276  INFO 12351 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;main&quot;: &lt;&lt; Empty Schema &gt;&gt;
+2021-08-18 14:17:36.278  INFO 12351 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema &quot;main&quot; to version &quot;1 - create tables&quot;
+2021-08-18 14:17:36.281  INFO 12351 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema &quot;main&quot; (execution time 00:00.006s)
+2021-08-18 14:17:36.346  INFO 12351 --- [    Test worker] i.s.a.comment.CommentQueryServiceTest    : Started CommentQueryServiceTest in 0.81 seconds (JVM running for 45.119)
+2021-08-18 14:17:36.367  INFO 12351 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@673d129 testClass = CommentQueryServiceTest, testInstance = io.spring.application.comment.CommentQueryServiceTest@231e30fa, testMethod = should_read_comments_of_article@CommentQueryServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5fca40db testClass = CommentQueryServiceTest, locations = '{}', classes = '{class io.spring.RealworldApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.mybatis.spring.boot.test.autoconfigure.MybatisTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@5cddefa3, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@6d6d6a43, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@99f60a7d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@36698e22, [ImportsContextCustomizer@7feeb627 key = [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.mybatis.spring.boot.autoconfigure.MybatisLanguageDriverAutoConfiguration, org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration, io.spring.infrastructure.repository.MyBatisCommentRepository, io.spring.infrastructure.repository.MyBatisUserRepository, io.spring.application.CommentQueryService, io.spring.infrastructure.repository.MyBatisArticleRepository]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5f9e60cd, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4a39fd90, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]; transaction manager [org.springframework.jdbc.support.JdbcTransactionManager@59f7379a]; rollback [true]
+2021-08-18 14:17:36.369 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.UserMapper.findById       : ==&gt;  Preparing: select id, username, email, password, bio, image from users where id = ?
+2021-08-18 14:17:36.370 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.UserMapper.findById       : ==&gt; Parameters: c5f60bf1-1aa8-4acf-b074-a6eda17dead7(String)
+2021-08-18 14:17:36.370 DEBUG 12351 --- [    Test worker] i.s.i.mybatis.mapper.UserMapper.insert   : ==&gt;  Preparing: insert into users (id, username, email, password, bio, image) values( ?, ?, ?, ?, ?, ? )
+2021-08-18 14:17:36.370 DEBUG 12351 --- [    Test worker] i.s.i.mybatis.mapper.UserMapper.insert   : ==&gt; Parameters: c5f60bf1-1aa8-4acf-b074-a6eda17dead7(String), aisensiy(String), aisensiy@test.com(String), 123(String), (String), (String)
+2021-08-18 14:17:36.371 DEBUG 12351 --- [    Test worker] i.s.i.mybatis.mapper.UserMapper.insert   : &lt;==    Updates: 1
+2021-08-18 14:17:36.373 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.ArticleMapper.findById    : ==&gt;  Preparing: select A.id articleId, A.slug articleSlug, A.title articleTitle, A.description articleDescription, A.body articleBody, A.user_id articleUserId, A.created_at articleCreatedAt, A.updated_at articleUpdatedAt, T.id tagId, T.name tagName from articles A left join article_tags AT on A.id = AT.article_id left join tags T on T.id = AT.tag_id where A.id = ?
+2021-08-18 14:17:36.374 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.ArticleMapper.findById    : ==&gt; Parameters: c0ffb769-4f4a-4ee3-94c7-759f994b22ac(String)
+2021-08-18 14:17:36.375 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.ArticleMapper.findTag     : ==&gt;  Preparing: select id, name from tags where name = ?
+2021-08-18 14:17:36.378 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.ArticleMapper.findTag     : ==&gt; Parameters: java(String)
+2021-08-18 14:17:36.379 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.ArticleMapper.insertTag   : ==&gt;  Preparing: insert into tags (id, name) values (?, ?)
+2021-08-18 14:17:36.380 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.ArticleMapper.insertTag   : ==&gt; Parameters: 0185d307-cc41-48cf-a72b-21c865488a0d(String), java(String)
+2021-08-18 14:17:36.380 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.ArticleMapper.insertTag   : &lt;==    Updates: 1
+2021-08-18 14:17:36.380 DEBUG 12351 --- [    Test worker] i.s.i.m.m.A.insertArticleTagRelation     : ==&gt;  Preparing: insert into article_tags (article_id, tag_id) values(?, ?)
+2021-08-18 14:17:36.381 DEBUG 12351 --- [    Test worker] i.s.i.m.m.A.insertArticleTagRelation     : ==&gt; Parameters: c0ffb769-4f4a-4ee3-94c7-759f994b22ac(String), 0185d307-cc41-48cf-a72b-21c865488a0d(String)
+2021-08-18 14:17:36.381 DEBUG 12351 --- [    Test worker] i.s.i.m.m.A.insertArticleTagRelation     : &lt;==    Updates: 1
+2021-08-18 14:17:36.382 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.ArticleMapper.insert      : ==&gt;  Preparing: insert into articles(id, slug, title, description, body, user_id, created_at, updated_at) values( ?, ?, ?, ?, ?, ?, ?, ?)
+2021-08-18 14:17:36.384 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.ArticleMapper.insert      : ==&gt; Parameters: c0ffb769-4f4a-4ee3-94c7-759f994b22ac(String), title(String), title(String), desc(String), body(String), c5f60bf1-1aa8-4acf-b074-a6eda17dead7(String), 2021-08-18 14:17:36.373(Timestamp), 2021-08-18 14:17:36.373(Timestamp)
+2021-08-18 14:17:36.384 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.ArticleMapper.insert      : &lt;==    Updates: 1
+2021-08-18 14:17:36.385 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.UserMapper.findById       : ==&gt;  Preparing: select id, username, email, password, bio, image from users where id = ?
+2021-08-18 14:17:36.385 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.UserMapper.findById       : ==&gt; Parameters: 67ca3b74-b462-4639-ae1c-913f1f130858(String)
+2021-08-18 14:17:36.385 DEBUG 12351 --- [    Test worker] i.s.i.mybatis.mapper.UserMapper.insert   : ==&gt;  Preparing: insert into users (id, username, email, password, bio, image) values( ?, ?, ?, ?, ?, ? )
+2021-08-18 14:17:36.397 DEBUG 12351 --- [    Test worker] i.s.i.mybatis.mapper.UserMapper.insert   : ==&gt; Parameters: 67ca3b74-b462-4639-ae1c-913f1f130858(String), user2(String), user2@email.com(String), 123(String), (String), (String)
+2021-08-18 14:17:36.397 DEBUG 12351 --- [    Test worker] i.s.i.mybatis.mapper.UserMapper.insert   : &lt;==    Updates: 1
+2021-08-18 14:17:36.398 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.UserMapper.findRelation   : ==&gt;  Preparing: SELECT F.user_id followUserId, F.follow_id followTargetId from follows F where F.user_id = ? and F.follow_id = ?
+2021-08-18 14:17:36.398 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.UserMapper.findRelation   : ==&gt; Parameters: c5f60bf1-1aa8-4acf-b074-a6eda17dead7(String), 67ca3b74-b462-4639-ae1c-913f1f130858(String)
+2021-08-18 14:17:36.399 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.UserMapper.saveRelation   : ==&gt;  Preparing: insert into follows(user_id, follow_id) values (?, ?)
+2021-08-18 14:17:36.399 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.UserMapper.saveRelation   : ==&gt; Parameters: c5f60bf1-1aa8-4acf-b074-a6eda17dead7(String), 67ca3b74-b462-4639-ae1c-913f1f130858(String)
+2021-08-18 14:17:36.399 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.UserMapper.saveRelation   : &lt;==    Updates: 1
+2021-08-18 14:17:36.400 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.CommentMapper.insert      : ==&gt;  Preparing: insert into comments(id, body, user_id, article_id, created_at, updated_at) values ( ?, ?, ?, ?, ?, ? )
+2021-08-18 14:17:36.400 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.CommentMapper.insert      : ==&gt; Parameters: aac6e7a6-87e5-42b5-ab62-4427dd482da5(String), content1(String), c5f60bf1-1aa8-4acf-b074-a6eda17dead7(String), c0ffb769-4f4a-4ee3-94c7-759f994b22ac(String), 2021-08-18 14:17:36.399(Timestamp), 2021-08-18 14:17:36.399(Timestamp)
+2021-08-18 14:17:36.400 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.CommentMapper.insert      : &lt;==    Updates: 1
+2021-08-18 14:17:36.400 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.CommentMapper.insert      : ==&gt;  Preparing: insert into comments(id, body, user_id, article_id, created_at, updated_at) values ( ?, ?, ?, ?, ?, ? )
+2021-08-18 14:17:36.401 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.CommentMapper.insert      : ==&gt; Parameters: d61593e4-a899-4ba3-92b9-5e3061e8e326(String), content2(String), 67ca3b74-b462-4639-ae1c-913f1f130858(String), c0ffb769-4f4a-4ee3-94c7-759f994b22ac(String), 2021-08-18 14:17:36.4(Timestamp), 2021-08-18 14:17:36.4(Timestamp)
+2021-08-18 14:17:36.401 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.CommentMapper.insert      : &lt;==    Updates: 1
+2021-08-18 14:17:36.408  INFO 12351 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@673d129 testClass = CommentQueryServiceTest, testInstance = io.spring.application.comment.CommentQueryServiceTest@231e30fa, testMethod = should_read_comments_of_article@CommentQueryServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5fca40db testClass = CommentQueryServiceTest, locations = '{}', classes = '{class io.spring.RealworldApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.mybatis.spring.boot.test.autoconfigure.MybatisTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@5cddefa3, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@6d6d6a43, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@99f60a7d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@36698e22, [ImportsContextCustomizer@7feeb627 key = [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.mybatis.spring.boot.autoconfigure.MybatisLanguageDriverAutoConfiguration, org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration, io.spring.infrastructure.repository.MyBatisCommentRepository, io.spring.infrastructure.repository.MyBatisUserRepository, io.spring.application.CommentQueryService, io.spring.infrastructure.repository.MyBatisArticleRepository]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5f9e60cd, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4a39fd90, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]
+2021-08-18 14:17:36.424  INFO 12351 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@673d129 testClass = CommentQueryServiceTest, testInstance = io.spring.application.comment.CommentQueryServiceTest@79370ad4, testMethod = should_read_comment_success@CommentQueryServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5fca40db testClass = CommentQueryServiceTest, locations = '{}', classes = '{class io.spring.RealworldApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.mybatis.spring.boot.test.autoconfigure.MybatisTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@5cddefa3, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@6d6d6a43, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@99f60a7d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@36698e22, [ImportsContextCustomizer@7feeb627 key = [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.mybatis.spring.boot.autoconfigure.MybatisLanguageDriverAutoConfiguration, org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration, io.spring.infrastructure.repository.MyBatisCommentRepository, io.spring.infrastructure.repository.MyBatisUserRepository, io.spring.application.CommentQueryService, io.spring.infrastructure.repository.MyBatisArticleRepository]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5f9e60cd, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4a39fd90, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]; transaction manager [org.springframework.jdbc.support.JdbcTransactionManager@59f7379a]; rollback [true]
+2021-08-18 14:17:36.426 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.UserMapper.findById       : ==&gt;  Preparing: select id, username, email, password, bio, image from users where id = ?
+2021-08-18 14:17:36.426 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.UserMapper.findById       : ==&gt; Parameters: 3a0fbcca-167f-4730-b10d-794a694eb225(String)
+2021-08-18 14:17:36.426 DEBUG 12351 --- [    Test worker] i.s.i.mybatis.mapper.UserMapper.insert   : ==&gt;  Preparing: insert into users (id, username, email, password, bio, image) values( ?, ?, ?, ?, ?, ? )
+2021-08-18 14:17:36.427 DEBUG 12351 --- [    Test worker] i.s.i.mybatis.mapper.UserMapper.insert   : ==&gt; Parameters: 3a0fbcca-167f-4730-b10d-794a694eb225(String), aisensiy(String), aisensiy@test.com(String), 123(String), (String), (String)
+2021-08-18 14:17:36.427 DEBUG 12351 --- [    Test worker] i.s.i.mybatis.mapper.UserMapper.insert   : &lt;==    Updates: 1
+2021-08-18 14:17:36.427 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.CommentMapper.insert      : ==&gt;  Preparing: insert into comments(id, body, user_id, article_id, created_at, updated_at) values ( ?, ?, ?, ?, ?, ? )
+2021-08-18 14:17:36.428 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.CommentMapper.insert      : ==&gt; Parameters: 83125f7c-bbbc-44eb-9b28-e77209193572(String), content(String), 3a0fbcca-167f-4730-b10d-794a694eb225(String), 123(String), 2021-08-18 14:17:36.427(Timestamp), 2021-08-18 14:17:36.427(Timestamp)
+2021-08-18 14:17:36.428 DEBUG 12351 --- [    Test worker] i.s.i.m.mapper.CommentMapper.insert      : &lt;==    Updates: 1
+2021-08-18 14:17:36.433  INFO 12351 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@673d129 testClass = CommentQueryServiceTest, testInstance = io.spring.application.comment.CommentQueryServiceTest@79370ad4, testMethod = should_read_comment_success@CommentQueryServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5fca40db testClass = CommentQueryServiceTest, locations = '{}', classes = '{class io.spring.RealworldApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.mybatis.spring.boot.test.autoconfigure.MybatisTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@5cddefa3, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@6d6d6a43, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@99f60a7d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@36698e22, [ImportsContextCustomizer@7feeb627 key = [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.mybatis.spring.boot.autoconfigure.MybatisLanguageDriverAutoConfiguration, org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration, io.spring.infrastructure.repository.MyBatisCommentRepository, io.spring.infrastructure.repository.MyBatisUserRepository, io.spring.application.CommentQueryService, io.spring.infrastructure.repository.MyBatisArticleRepository]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5f9e60cd, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4a39fd90, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.5.1</a> at Aug 18, 2021, 2:17:44 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.spring.api.UsersApiTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-08-18T14:17:19" hostname="nixskillup" time="1.44">
+  <properties/>
+  <testcase name="should_login_success" classname="io.spring.api.UsersApiTest" time="0.548"/>
+  <testcase name="should_create_user_success" classname="io.spring.api.UsersApiTest" time="0.4"/>
+  <testcase name="should_show_error_message_for_invalid_email" classname="io.spring.api.UsersApiTest" time="0.169"/>
+  <testcase name="should_show_error_for_duplicated_username" classname="io.spring.api.UsersApiTest" time="0.071"/>
+  <testcase name="should_show_error_for_duplicated_email" classname="io.spring.api.UsersApiTest" time="0.059"/>
+  <testcase name="should_show_error_message_for_blank_username" classname="io.spring.api.UsersApiTest" time="0.064"/>
+  <testcase name="should_fail_login_with_wrong_password" classname="io.spring.api.UsersApiTest" time="0.085"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-08-18 14:17:17.923  INFO 12351 --- [    Test worker] io.spring.api.UsersApiTest               : Starting UsersApiTest using Java 11.0.11 on nixskillup with PID 12351 (started by root in /repo/test/spring-boot-realworld-example-app)
+2021-08-18 14:17:17.929  INFO 12351 --- [    Test worker] io.spring.api.UsersApiTest               : No active profile set, falling back to default profiles: default
+2021-08-18 14:17:18.831  INFO 12351 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a0465d11-1adf-4249-9778-bfac4aab2327
+
+2021-08-18 14:17:18.982  INFO 12351 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1252fc7d, org.springframework.security.web.context.SecurityContextPersistenceFilter@26b75b4d, org.springframework.security.web.header.HeaderWriterFilter@264511d, org.springframework.web.filter.CorsFilter@1d54c60e, org.springframework.security.web.authentication.logout.LogoutFilter@472487d0, io.spring.api.security.JwtTokenFilter@6c6909c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70da0f3d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50965482, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6df91e3a, org.springframework.security.web.session.SessionManagementFilter@4de8c410, org.springframework.security.web.access.ExceptionTranslationFilter@5e21135d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21eac735]
+2021-08-18 14:17:19.211  INFO 12351 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-18 14:17:19.405  WARN 12351 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-18 14:17:19.582  INFO 12351 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-18 14:17:19.582  INFO 12351 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-18 14:17:19.583  INFO 12351 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-08-18 14:17:19.624  INFO 12351 --- [    Test worker] io.spring.api.UsersApiTest               : Started UsersApiTest in 1.773 seconds (JVM running for 28.397)
+422 Validation failed for argument [0] in public org.springframework.http.ResponseEntity io.spring.api.UsersApi.createUser(io.spring.application.user.RegisterParam): [Field error in object 'registerParam' on field 'email': rejected value [johnxjacob.com]; codes [Email.registerParam.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerParam.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@4d8f6b2,.*]; default message [should be an email]] 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    "errors": {
+        "email": [
+            "should be an email"
+        ]
+    }
+}
+422 Validation failed for argument [0] in public org.springframework.http.ResponseEntity io.spring.api.UsersApi.createUser(io.spring.application.user.RegisterParam): [Field error in object 'registerParam' on field 'username': rejected value [johnjacob]; codes [DuplicatedUsernameConstraint.registerParam.username,DuplicatedUsernameConstraint.username,DuplicatedUsernameConstraint.java.lang.String,DuplicatedUsernameConstraint]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerParam.username,username]; arguments []; default message [username]]; default message [duplicated username]] 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    "errors": {
+        "username": [
+            "duplicated username"
+        ]
+    }
+}
+422 Validation failed for argument [0] in public org.springframework.http.ResponseEntity io.spring.api.UsersApi.createUser(io.spring.application.user.RegisterParam): [Field error in object 'registerParam' on field 'username': rejected value []; codes [NotBlank.registerParam.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerParam.username,username]; arguments []; default message [username]]; default message [can't be empty]] 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    "errors": {
+        "username": [
+            "can't be empty"
+        ]
+    }
+}
+422 invalid email or password
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    "message": "invalid email or password"
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

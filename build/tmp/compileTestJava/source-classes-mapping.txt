@@ -1,0 +1,65 @@
+io/spring/application/tag/TagsQueryServiceTest.java
+ io.spring.application.tag.TagsQueryServiceTest
+io/spring/infrastructure/article/ArticleRepositoryTransactionTest.java
+ io.spring.infrastructure.article.ArticleRepositoryTransactionTest
+io/spring/api/UsersApiTest.java
+ io.spring.api.UsersApiTest
+ io.spring.api.UsersApiTest$1
+ io.spring.api.UsersApiTest$1$1
+ io.spring.api.UsersApiTest$2
+ io.spring.api.UsersApiTest$2$1
+ io.spring.api.UsersApiTest$3
+ io.spring.api.UsersApiTest$3$1
+io/spring/infrastructure/article/MyBatisArticleRepositoryTest.java
+ io.spring.infrastructure.article.MyBatisArticleRepositoryTest
+io/spring/application/article/ArticleQueryServiceTest.java
+ io.spring.application.article.ArticleQueryServiceTest
+io/spring/RealworldApplicationTests.java
+ io.spring.RealworldApplicationTests
+io/spring/infrastructure/comment/MyBatisCommentRepositoryTest.java
+ io.spring.infrastructure.comment.MyBatisCommentRepositoryTest
+io/spring/api/TestWithCurrentUser.java
+ io.spring.api.TestWithCurrentUser
+io/spring/api/CurrentUserApiTest.java
+ io.spring.api.CurrentUserApiTest
+ io.spring.api.CurrentUserApiTest$1
+ io.spring.api.CurrentUserApiTest$1$1
+ io.spring.api.CurrentUserApiTest$2
+ io.spring.api.CurrentUserApiTest$2$1
+ io.spring.api.CurrentUserApiTest$3
+io/spring/api/ArticleApiTest.java
+ io.spring.api.ArticleApiTest
+ io.spring.api.ArticleApiTest$1
+ io.spring.api.ArticleApiTest$1$1
+io/spring/TestHelper.java
+ io.spring.TestHelper
+io/spring/core/article/ArticleTest.java
+ io.spring.core.article.ArticleTest
+io/spring/application/comment/CommentQueryServiceTest.java
+ io.spring.application.comment.CommentQueryServiceTest
+io/spring/infrastructure/user/MyBatisUserRepositoryTest.java
+ io.spring.infrastructure.user.MyBatisUserRepositoryTest
+io/spring/infrastructure/service/DefaultJwtServiceTest.java
+ io.spring.infrastructure.service.DefaultJwtServiceTest
+io/spring/infrastructure/DbTestBase.java
+ io.spring.infrastructure.DbTestBase
+io/spring/application/profile/ProfileQueryServiceTest.java
+ io.spring.application.profile.ProfileQueryServiceTest
+io/spring/api/ArticleFavoriteApiTest.java
+ io.spring.api.ArticleFavoriteApiTest
+io/spring/api/ArticlesApiTest.java
+ io.spring.api.ArticlesApiTest
+ io.spring.api.ArticlesApiTest$1
+ io.spring.api.ArticlesApiTest$1$1
+io/spring/api/CommentsApiTest.java
+ io.spring.api.CommentsApiTest
+ io.spring.api.CommentsApiTest$1
+ io.spring.api.CommentsApiTest$1$1
+ io.spring.api.CommentsApiTest$2
+ io.spring.api.CommentsApiTest$2$1
+io/spring/infrastructure/favorite/MyBatisArticleFavoriteRepositoryTest.java
+ io.spring.infrastructure.favorite.MyBatisArticleFavoriteRepositoryTest
+io/spring/api/ListArticleApiTest.java
+ io.spring.api.ListArticleApiTest
+io/spring/api/ProfileApiTest.java
+ io.spring.api.ProfileApiTest

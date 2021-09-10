@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.spring.core.article.ArticleTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-08-18T14:17:37" hostname="nixskillup" time="0.008">
+  <properties/>
+  <testcase name="should_get_right_slug_with_number_in_title" classname="io.spring.core.article.ArticleTest" time="0.003"/>
+  <testcase name="should_handle_other_language" classname="io.spring.core.article.ArticleTest" time="0.001"/>
+  <testcase name="should_get_right_slug" classname="io.spring.core.article.ArticleTest" time="0.001"/>
+  <testcase name="should_get_lower_case_slug" classname="io.spring.core.article.ArticleTest" time="0.001"/>
+  <testcase name="should_handle_commas" classname="io.spring.core.article.ArticleTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

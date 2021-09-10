@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ArticlesApiTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ArticlesApiTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/io.spring.api.html">io.spring.api</a> &gt; ArticlesApiTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.323s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">should_create_article_success</td>
+<td class="success">0.177s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should_get_error_message_with_duplicated_title</td>
+<td class="success">0.081s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should_get_error_message_with_wrong_parameter</td>
+<td class="success">0.065s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-08-18 14:17:27.222  INFO 12351 --- [    Test worker] io.spring.api.ArticlesApiTest            : Starting ArticlesApiTest using Java 11.0.11 on nixskillup with PID 12351 (started by root in /repo/test/spring-boot-realworld-example-app)
+2021-08-18 14:17:27.224  INFO 12351 --- [    Test worker] io.spring.api.ArticlesApiTest            : No active profile set, falling back to default profiles: default
+2021-08-18 14:17:27.840  INFO 12351 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 31f15f75-f669-427a-a4ac-335055cd3208
+
+2021-08-18 14:17:27.971  INFO 12351 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c3ca290, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ba7462b, org.springframework.security.web.header.HeaderWriterFilter@20e95b28, org.springframework.web.filter.CorsFilter@2ed1329f, org.springframework.security.web.authentication.logout.LogoutFilter@74332b1b, io.spring.api.security.JwtTokenFilter@62471028, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2dffbd82, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47a5930e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f0813dc, org.springframework.security.web.session.SessionManagementFilter@131c35f5, org.springframework.security.web.access.ExceptionTranslationFilter@281fc227, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f311336]
+2021-08-18 14:17:28.159  INFO 12351 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-18 14:17:28.373  WARN 12351 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-18 14:17:28.556  INFO 12351 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-08-18 14:17:28.557  INFO 12351 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-18 14:17:28.558  INFO 12351 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-08-18 14:17:28.587  INFO 12351 --- [    Test worker] io.spring.api.ArticlesApiTest            : Started ArticlesApiTest in 1.393 seconds (JVM running for 37.36)
+422 Validation failed for argument [0] in public org.springframework.http.ResponseEntity io.spring.api.ArticlesApi.createArticle(io.spring.application.article.NewArticleParam,io.spring.core.user.User): [Field error in object 'newArticleParam' on field 'title': rejected value [How to train your dragon]; codes [DuplicatedArticleConstraint.newArticleParam.title,DuplicatedArticleConstraint.title,DuplicatedArticleConstraint.java.lang.String,DuplicatedArticleConstraint]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [newArticleParam.title,title]; arguments []; default message [title]]; default message [article name exists]] 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    &quot;errors&quot;: {
+        &quot;title&quot;: [
+            &quot;article name exists&quot;
+        ]
+    }
+}
+422 Validation failed for argument [0] in public org.springframework.http.ResponseEntity io.spring.api.ArticlesApi.createArticle(io.spring.application.article.NewArticleParam,io.spring.core.user.User): [Field error in object 'newArticleParam' on field 'body': rejected value []; codes [NotBlank.newArticleParam.body,NotBlank.body,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [newArticleParam.body,body]; arguments []; default message [body]]; default message [can't be empty]] 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+
+{
+    &quot;errors&quot;: {
+        &quot;body&quot;: [
+            &quot;can't be empty&quot;
+        ]
+    }
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.5.1</a> at Aug 18, 2021, 2:17:44 PM</p>
+</div>
+</div>
+</body>
+</html>
